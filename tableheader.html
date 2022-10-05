@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>table header and others</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="shortcut icon" href="../logo.svg" type="image/x-icon">
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding-top: 10px;
+            padding-left: 30px;
+            padding-right: 40px;
+            padding-bottom: 20px;
+            
+        }
+        table{
+            border-spacing :30px ;
+        }
+        tr:nth-child(odd){
+            background-color: #D6EEEE;
+        }
+    </style>
+    </head>
+    <body>
+        <h2>vertical table header</h2>
+        <p>
+            the first column becomes table headers if you set the first table cell in each table row to s TH element:
+        </p>
+        <table style="width: 100%;">
+            <caption>vertical table header example</caption>
+        <tr>
+            <th>Firstname</th>
+            <td>jill</td>
+            <td>eve</td>
+        </tr>
+        <tr>
+            <th>Lastname</th>
+            <td>Smith</td>
+            <td>Jackson</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>50</td>
+            <td>94</td>
+        </tr>
+        </table>
+    </body>
+</html>
+<br>
+<p>
+<table style="width: 100px;">
+    <caption>Data table</caption>
+    <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>jill</td>
+        <td>smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+</table>
+</p>
+
+
+<!--hoverable table-->
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+}
+
+tr:hover {background-color: #D6EEEE;}
+</style>
+</head>
+<body>
+
+<h2>Hoverable Table</h2>
+<p>Move the mouse over the table rows to see the effect.</p>
+
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+

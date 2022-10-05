@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <!-- responsive images -->
+        <h2>Responsive Image</h2>
+        <p>When the CSS width property is set in a percentage value, the image will scale up and down when resizing the browser window. Resize the browser window to see the effect.</p>
+        <img src="sammy.jpeg" style="width:100%">
+
+        <!-- using max-width -->
+        <img src="sammy.jpeg" style="max-width:100%; height: auto;">
+
+        <!-- showing diff imges depending on window size -->
+        <h2>Show Different Images Depending on Browser Width</h2>
+        <p>Resize the browser width and the image will change at 600px and 1500px.</p>
+
+        <picture>
+                <source srcset="IMG_3810.jpeg" media="(max-width: 600px)">
+                <source srcset="IMG_3144.jpeg" media="(max-width: 150px)">
+                <source srcset="IMG_4942.jpeg">
+                <img src="IMG_5004.jpeg" alt="Flowers" style="width:auto;">
+        </picture>
+        <h1 style="font-size:10vw;">Responsive Text</h1>
+
+            <p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+
+            <p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+
+            <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+
+    </body>
+</html>
